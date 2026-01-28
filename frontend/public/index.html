@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        header { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); margin-bottom: 30px; text-align: center; }
+        h1 { color: #333; font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { color: #666; font-size: 1.1em; }
+        .status { background: #4caf50; color: white; padding: 25px; border-radius: 12px; margin: 30px 0; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+        .feature { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+        .feature h3 { color: #667eea; margin-bottom: 15px; }
+        .api-section { background: white; padding: 30px; border-radius: 12px; }
+        .code { background: #2d3748; color: #68d391; padding: 20px; border-radius: 8px; font-family: monospace; margin: 15px 0; overflow-x: auto; }
+        footer { text-align: center; color: white; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 Social Media Dashboard</h1>
+            <p class="subtitle">Full-Stack Application with Node.js, Express, MongoDB & React</p>
+        </header>
+        
+        <div class="status">
+            <h2>✅ Frontend is LIVE on Netlify!</h2>
+            <p>Your Social Media Dashboard is deployed and running. Backend API is on Render.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>👤 User Authentication</h3>
+                <p>Secure login and registration with JWT tokens. Password encryption with bcrypt.</p>
+            </div>
+            <div class="feature">
+                <h3>📝 Create Posts</h3>
+                <p>Share your thoughts, ideas and updates. Express yourself with rich content.</p>
+            </div>
+            <div class="feature">
+                <h3>❤️ Like & Comment</h3>
+                <p>Engage with community. Like posts and leave meaningful comments.</p>
+            </div>
+            <div class="feature">
+                <h3>👥 Follow Users</h3>
+                <p>Build your network. Follow creators and get their updates.</p>
+            </div>
+            <div class="feature">
+                <h3>🔔 Real-time Notifications</h3>
+                <p>Get instant updates for likes, comments, and new followers.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 User Profile</h3>
+                <p>Manage your profile, view stats, and control your content.</p>
+            </div>
+        </div>
+
+        <div class="api-section">
+            <h2>🔗 Backend API Endpoints</h2>
+            <p>Backend is deployed on Render at: <strong>https://social-media-api.onrender.com</strong></p>
+            
+            <strong>Available Routes:</strong>
+            <div class="code">
+GET    /api/health              - Health Check
+POST   /api/auth/register       - Register User
+POST   /api/auth/login          - User Login  
+POST   /api/auth/logout         - User Logout
+GET    /api/users               - Get All Users
+GET    /api/users/:id           - Get User
+PUT    /api/users/:id           - Update Profile
+GET    /api/posts               - Get All Posts
+POST   /api/posts               - Create Post
+GET    /api/posts/:id           - Get Post
+PUT    /api/posts/:id           - Update Post
+DELETE /api/posts/:id           - Delete Post
+            </div>
+        </div>
+
+        <footer>
+            <p>✨ Built with ❤️ | Social Media Dashboard | 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
