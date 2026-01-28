@@ -1,0 +1,8 @@
+[build]
+  command = "echo 'Building frontend from HTML file...'"
+  publish = "frontend/public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
